@@ -1,0 +1,10 @@
+basic.clearScreen()
+basic.showString("Lab1")
+basic.forever(function () {
+    basic.showIcon(IconNames.Diamond)
+    basic.pause(1000)
+    basic.showIcon(IconNames.Sword)
+    basic.pause(1000)
+    basic.showIcon(IconNames.Chessboard)
+    basic.pause(1000)
+})
