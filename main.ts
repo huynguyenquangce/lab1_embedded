@@ -1,10 +1,36 @@
-basic.clearScreen()
-basic.showString("Lab1")
+basic.showIcon(IconNames.Sword)
+basic.pause(2000)
 basic.forever(function () {
-    basic.showIcon(IconNames.Diamond)
-    basic.pause(1000)
-    basic.showIcon(IconNames.Sword)
-    basic.pause(1000)
-    basic.showIcon(IconNames.Chessboard)
-    basic.pause(1000)
+    basic.showLeds(`
+        # # # # #
+        # . . . #
+        # . . . #
+        # . . . #
+        # # # # #
+        `)
+    basic.pause(100)
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # . # .
+        . # # # .
+        . . . . .
+        `)
+    basic.pause(100)
+    basic.showLeds(`
+        . . . . .
+        . . . . .
+        . . # . .
+        . . . . .
+        . . . . .
+        `)
+    basic.pause(100)
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # . # .
+        . # # # .
+        . . . . .
+        `)
+    basic.pause(100)
 })
